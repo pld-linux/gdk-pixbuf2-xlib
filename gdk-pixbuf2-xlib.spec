@@ -5,15 +5,12 @@
 Summary:	Deprecated API for integrating GdkPixbuf with Xlib data types
 Summary(pl.UTF-8):	Przestarzałe API do integracji GdkPixbuf z typami danych Xlib
 Name:		gdk-pixbuf2-xlib
-# see meson.build
-Version:	2.40.1
-%define	gitref	3116b8ae55501cf48d16970aa2b50a5530e15223
-%define	snap	20200612
+Version:	2.40.2
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
-Source0:	https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib/-/archive/%{gitref}/gdk-pixbuf-xlib-%{snap}.tar.bz2
-# Source0-md5:	c89996496062a17bb0b9d4a0e73f4c2b
+Source0:	https://download.gnome.org/sources/gdk-pixbuf-xlib/2.40/gdk-pixbuf-xlib-%{version}.tar.xz
+# Source0-md5:	fbd57e867e039a8cf9164d145c0f0434
 URL:		https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	docbook-style-xsl
@@ -92,7 +89,7 @@ API documentation for gdk-pixbuf-xlib library.
 Dokumentacja API biblioteki gdk-pixbuf-xlib.
 
 %prep
-%setup -q -n gdk-pixbuf-xlib-%{gitref}
+%setup -q -n gdk-pixbuf-xlib-%{version}
 
 %build
 %meson build \
