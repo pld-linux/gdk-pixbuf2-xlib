@@ -80,7 +80,7 @@ Summary(pl.UTF-8):	Dokumentacja API biblioteki gdk-pixbuf-xlib
 Group:		Documentation
 Conflicts:	gdk-pixbuf2-apidocs < 2.42
 Conflicts:	gtk+2-apidocs < 2:2.21.3-1
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description apidocs
 API documentation for gdk-pixbuf-xlib library.
